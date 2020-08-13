@@ -1,0 +1,17 @@
+function addnumbers(firstnumber, lastnumber) {
+var sum;
+var i;
+   sum = 0;
+   i = firstnumber;
+   while (i <= lastnumber) {
+   sum += i;
+   i++;
+   }
+   return sum;
+}
+
+   var answer;
+
+answer = addnumbers(7, 15);
+
+print(answer);

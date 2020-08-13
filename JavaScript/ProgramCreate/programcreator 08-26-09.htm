@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Program Creator</title>
+<script language="javascript">
+<!--
+
+var input = new Array();
+
+function PUTINPUTSINTOARRAY() {
+   var numberOfBoxes = 12;
+   var i;
+   for(i=0;i<numberOfBoxes;i++) {
+      input[i] = document.getElementById("input" + i).value;
+       // if(!isNaN(input[i])) {
+       //  input[i] = Number(input[i]);
+     // }
+   }
+}
+
+function CREATEINPUTBOXES() {
+   var numberOfBoxes = 12;
+   document.getElementById("inputBoxes").innerHTML = "";
+   var i;
+   var inputLabel;
+   var inputName;
+   for(i=0;i<numberOfBoxes;i++) {
+      inputLabel="input[" + i +"]";
+      inputName="input" + i;
+      document.getElementById("inputBoxes").innerHTML = document.getElementById("inputBoxes").innerHTML + 
+         "<nobr><b>" + inputLabel + "</b>" + "<input type=\'text\' id=\'" + inputName +"\' name=\'"+ inputName +"\' size=\'20\' /><br /></nobr>";
+  }
+}
+
+function EVALUATECODE() {
+   document.getElementById("printResults").innerHTML = "";
+   PUTINPUTSINTOARRAY();
+   try {
+      eval(document.getElementById("studentProgram").value); // eval(document.programForm.studentProgram.value);
+   }
+   catch(err) {
+      document.getElementById("printResults").innerHTML = "ERROR:  " + err.message;
+   }
+}
+
+function print(x) {
+   document.getElementById("printResults").value = document.getElementById("printResults").value + x + "\n";
+}
+
+
+// -->
+</script>
+<head>
+<body onload="CREATEINPUTBOXES();">
+<form name="programForm">
+<table width="100%">
+   <tr>
+      <td align="center" valign="top">
+          <div style="font-family: Arial, Helvetica, sans-serif; font-size: 120%;
+               text-align: center;">
+             Type Code Here
+          </div>
+          <textarea id="studentProgram" name="studentProgram" rows="12" cols="70"
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 100%;"></textarea>
+          <div><input type="button" value="Run Code" onclick="EVALUATECODE();" /></div>
+          <div style="font-family: Arial, Helvetica, sans-serif; font-size: 120%;
+               text-align: center;">
+             Output
+          </div>
+          <textarea id="printResults" name="printResults" rows="12" cols="70" 
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 100%;  width="100%;"
+                   readonly="readonly"></textarea> 
+      </td>
+      <td align="center" valign="top"> 
+          <div style="font-family: Arial, Helvetica, sans-serif; font-size: 120%;
+               text-align: center;">
+             Inputs
+          </div>    
+         <div id="inputBoxes" name="inputBoxes"></div>
+      </td>          
+   </tr>
+</table> 
+</form>
+</body>
+</html>

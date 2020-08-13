@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Register</h1>
+
+<br>
+<br>
+<br>
+
+	<form>
+		
+		<label for="FName">First Name:</label>
+		<Input id="FName" type="text" placeholder="Rick">
+		<label for="LName">Last Name:</label>
+		<Input id="LName" type="text" placeholder="James">
+
+<br>
+
+		<label for="Male">Male</label>
+		<input type="radio" id="Male" name="drone" value="Male">
+		<label for="Female">Female</label>
+		<input type="radio" id="Female" name="drone" value="Female">
+		<label for="Other">Prefer not to Answer</label>
+		<input type="radio" id="Other" name="drone" value="Other">
+
+<br>
+
+<label for="Email">Email:</label>
+		<Input id="Email" type="email" placeholder="Example@null.com">
+
+<label for="Password">Password:</label>
+		<Input id="Password" type="password" pattern=",{8,16}" required title="8 to 16 characters">
+<br>
+		<div>
+			<label>
+				Birthday:
+		<select>
+			<option>Month</option>
+			<option>November</option>
+			<option>December</option>
+		</select>
+		<select>
+			<option>Day</option>
+			<option>06</option>
+			<option>25</option>
+		</select>
+		<select>
+			<option>Year</option>
+			<option>2016</option>
+			<option>2019</option>
+		</select>
+			</label>
+		</div>
+
+<br>
+
+		<label for="Agree">I agree to the terms and conditions </label>
+		<input type="checkbox" id="Agree" name="Agree">
+
+<br>
+
+		<button>Login</button>
+	</form>
+
+</body>
+</html>

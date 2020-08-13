@@ -1,0 +1,9 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/dc/ef/f6/dceff6eb8639f46f68f25c36125bdbeb.jpg");
+    background-color: #ffff99
+}
+
+#background-image.body{
+    size: 30%;
+}
+

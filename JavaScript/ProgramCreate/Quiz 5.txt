@@ -1,0 +1,95 @@
+// Create memory locations
+
+var states = new Array();
+var num;
+var word;
+var i;
+var y;
+
+        states[0] = "Alabama";
+        states[1] = "Alaska";
+        states[2] = "Arizona";
+        states[3] = "Arkansas";
+        states[4] = "California";
+        states[5] = "Colorado";
+        states[6] = "Connecticut";
+        states[7] = "Delaware";
+        states[8] = "Florida";
+        states[9] = "Georgia";
+        states[10] = "Hawaii";
+        states[11] = "Idaho";
+        states[12] = "Illinois";
+        states[13] = "Indiana";
+        states[14] = "Iowa";
+        states[15] = "Kansas";
+        states[16] = "Kentucky";
+        states[17] = "Louisiana";
+        states[18] = "Maine";
+        states[19] = "Maryland";
+        states[20] = "Massachusetts";
+        states[21] = "Michigan";
+        states[22] = "Minnesota";
+        states[23] = "Mississippi";
+        states[24] = "Missouri";
+        states[25] = "Montana";
+        states[26] = "Nebraska";
+        states[27] = "Nevada";
+        states[28] = "New Hampshire";
+        states[29] = "New Jersey";
+        states[30] = "New Mexico";
+        states[31] = "New York";
+        states[32] = "North Carolina";
+        states[33] = "North Dakota";
+        states[34] = "Ohio";
+        states[35] = "Oklahoma";
+        states[36] = "Oregon";
+        states[37] = "Pennsylvania";
+        states[38] = "Rhode Island";
+        states[39] = "South Carolina";
+        states[40] = "South Dakota";
+        states[41] = "Tennessee";
+        states[42] = "Texas";
+        states[43] = "Utah";
+        states[44] = "Vermont";
+        states[45] = "Virginia";
+        states[46] = "Washington";
+        states[47] = "West Virginia";
+        states[48] = "Wisconsin";
+        states[49] = "Wyoming";
+
+// Get inputs from users
+
+num = Number(input[0]);
+word = input[1].toLowerCase();
+
+// Calculate and Print the states that are longer then input[0]
+
+i = 0;
+while(i < states.length) {
+   if(num < states[i].length) {
+   print(states[i]);
+   }
+i++;
+}
+
+// Calculate and Print the the characters in each word that are vowels
+
+i = 0;
+y = word.charAt(i);{
+   if( y == "a" || y == "e" || y == "i" || y == "o" || y == "u") {
+   print("Character " + i + " of " + word + " is a vowel."); 
+   }
+i++;
+}
+
+// Quiz Answer
+
+i = 0 ;
+while (i < word.length) {
+   if (word.charAt(i) is == "a" || word.charAt(i) is == "e" 
+        || word.charAt(i) is == "i" || word.charAt(i) is == "o" 
+	|| word.charAt(i) is == "u") {
+   print(word.charAt(i));
+   }
+i++;
+}

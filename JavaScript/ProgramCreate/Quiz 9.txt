@@ -1,0 +1,41 @@
+// Using a switch statement to identify word vowels
+
+var word;
+var letter;
+
+word = input[0].toLowerCase;
+letter = word.charAt(0);
+
+switch(word) {
+
+   case "letter == "a"":
+   print("Your word begins with a vowel.");
+   break;
+
+   case "letter == "e"":
+   print("Your word begins with a vowel.");
+   break;
+
+   case "letter == "i"":
+   print("Your word begins with a vowel.");
+   break;
+
+   case "letter == "o"":
+   print("Your word begins with a vowel.");
+   break;
+
+   case "letter == "u"":
+   print("Your word begins with a vowel.");
+   break;
+
+   default:
+   print("Your word does not begin with a vowel.");
+   break;
+
+}
+
+// Using a for loop to print each word letter
+
+for(i = 0; word.charAt(i); i = i + 1;) {
+print(word);
+ }

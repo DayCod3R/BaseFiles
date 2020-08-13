@@ -1,0 +1,21 @@
+tr{
+	background: yellow;
+}
+#specialle {
+	background: green;
+}
+#specially {
+	background: orange;
+}
+#speciall {
+	background: blue;
+}
+.highlight{
+	background: purple;
+}
+.complete{
+	text-decoration: underline overline;
+}
+.blink{
+	text-decoration: blink;
+}

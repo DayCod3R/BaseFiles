@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jquery intro</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() { // beginning of document ready function
+   $(".mydivs").toggle(
+      function() {
+	     $(this).css("color", "red").css("backgroundColor", "yellow");
+	  },
+	  
+	  function() {
+	     $(this).css("color", "green").css("backgroundColor", "blue");
+	  }
+   
+   );
+   
+    $(".myotherdivs").hover(
+      function() {
+	     $(this).css("color", "yellow").css("backgroundColor", "red");
+	  },
+	  
+	  function() {
+	     $(this).css("color", "white").css("backgroundColor", "blue");
+	  }
+   
+   );
+
+
+}); //end of document ready function 
+</script>
+
+<style>
+   
+   
+
+</style>
+
+</head>
+
+<body>
+<div class="mydivs">Hi there</div>
+<div class="mydivs">Hi there</div>
+<div class="mydivs">Hi there</div>
+<div class="mydivs">Hi there</div>
+<div class="mydivs">Hi there</div>
+<div class="mydivs">Hi there</div>
+
+<div class="myotherdivs">Goodbye</div>
+<div class="myotherdivs">Goodbye</div>
+<div class="myotherdivs">Goodbye</div>
+<div class="myotherdivs">Goodbye</div>
+<div class="myotherdivs">Goodbye</div>
+<div class="myotherdivs">Goodbye</div>
+
+</body>
+</html>

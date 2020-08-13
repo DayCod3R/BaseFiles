@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jquery intro</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() { // beginning of document ready function
+
+$(".menuopener").toggle(
+    function() {
+	   $(this).attr("value", "Close Menu");
+	   $(this).nextAll(".menulist").first().show();
+	},
+    function() {
+	   $(this).attr("value", "Open Menu");
+       $(this).nextAll(".menulist").first().hide();
+	}	
+);
+
+$(document).click(
+    function(e) {
+        alert("left = " + e.pageX + " top = " + e.pageY);
+	}
+
+);
+
+$(document).keypress(
+    function(e) {
+        alert(String.fromCharCode(e.which));
+	}
+
+);
+
+
+$("#hi").click(
+   function() {
+      $(this).animate({"left": "+=50px",
+	                   "opacity": .5,
+					   "fontSize": "48px"}, 1500);
+      return false;
+   }
+);
+
+$(".hoverdiv").hover(
+   function() {
+	   $(this).css("color", "red").css("fontSize", "300%");
+	},
+    function() {
+	   $(this).css("color", "blue").css("fontSize", "100%");
+	}	
+);
+}); //end of document ready function 
+</script>
+
+<style>
+   .menulist {
+      display: none;
+   }
+   
+   .moveable {
+      position: absolute;
+   }
+   
+
+</style>
+
+</head>
+
+<body>
+
+<h2 id="hi" class="moveable"> Hi there</h2>
+<input type="button" value="Open Menu" class="menuopener" /><br />
+<div class="menulist" >
+<ul>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>   
+</ul>
+</div>
+<input type="button" value="Open Menu" class="menuopener" /><br />
+<div class="menulist" >
+<ul>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>   
+</ul>
+</div>
+<input type="button" value="Open Menu" class="menuopener" /><br />
+<div class="menulist" >
+<ul>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>   
+</ul>
+</div>
+<input type="button" value="Open Menu" class="menuopener" /><br />
+<div class="menulist" >
+<ul>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>   
+</ul>
+</div><input type="button" value="Open Menu" class="menuopener" /><br />
+<div class="menulist" >
+<ul>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>   
+</ul>
+</div>
+<input type="button" value="Open Menu" class="menuopener" /><br />
+<div class="menulist" >
+<ul>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>   
+</ul>
+</div>
+<input type="button" value="Open Menu" class="menuopener" /><br />
+<div class="menulist" >
+<ul>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>
+   <li><a href="http://www.cnn.com">CNN</a></li>   
+</ul>
+</div>
+<div class="hoverdiv">Hover Div</div>
+<div class="hoverdiv">Hover Div</div>
+<div class="hoverdiv">Hover Div</div>
+<div class="hoverdiv">Hover Div</div>
+</body>
+</html>

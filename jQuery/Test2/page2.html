@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jquery intro</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() { // beginning of document ready function
+
+$(".expandable").hover(
+    function() {
+	   $(this).css("width", "600px").css("height", "200px").css("backgroundColor", "pink");
+	},
+    function() {
+	   $(this).css("width", "300px").css("height", "100px").css("backgroundColor", "yellow");
+	}	
+);
+
+$(".expandable").toggle(
+    function() {
+	   $(this).css("fontSize", "50%");
+	},
+    function() {
+	   $(this).css("fontSize", "100%");
+	}	
+);
+ 	
+}); //end of document ready function 
+</script>
+
+<style>
+
+   .expandable {
+      height: 100px;
+	  width: 300px;
+	  fontSize: 100%;
+	  background-color: yellow;
+   }
+   
+</style>
+
+</head>
+
+<body>
+
+<div class="expandable"><h1>John</h1></div>
+<div class="expandable"><h1>Doe</h1></div>
+<div class="expandable"><h1>John</h1></div>
+<div class="expandable"><h1>Doe</h1></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jquery intro</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() { // beginning of document ready function
+  $(document).keypress(
+     function(e) {
+	    if (String.fromCharCode(e.which) == "x") {
+		   $("#div1").animate({"fontSize": "300%",
+		                        "height": "+=25px"}, 1500);
+		}
+		if (String.fromCharCode(e.which) == "y") {
+		   $("#div1").animate({"fontSize": "100%",
+		                        "height": "-=25px"}, 1500);
+		}
+  
+     }     
+  );
+
+
+}); //end of document ready function 
+</script>
+
+<style>
+   #div1 {
+      position: absolute;
+	  top; 100px;
+	  left: 200px;
+	  background-color: yellow;
+   }
+   
+
+</style>
+
+</head>
+
+<body>
+<div id="div1">This is div1</div>
+
+
+</body>
+</html>

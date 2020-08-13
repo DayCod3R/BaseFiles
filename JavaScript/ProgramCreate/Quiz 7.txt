@@ -1,0 +1,26 @@
+// Function
+
+function wholename(fname, mname, lname) {
+var fullname;
+fullname = fname + " " + mname + " " + lname
+return fullname;
+}
+
+// Declare Variables
+
+var firstname;
+var middlename;
+var lastname;
+var username;
+
+// Get inputs
+
+firstname = input[0];
+middlename = input[1];
+lastname = input[2];
+
+// Calculate
+
+username = wholename(firstname, middlename, lastname);
+
+print("The whole name is " + username + ".");

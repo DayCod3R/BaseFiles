@@ -1,0 +1,27 @@
+// Declare variables
+
+var username;
+var password;
+
+// Get inputs from user
+
+username = input[0];
+password = input[1];
+
+// Convert inputs
+
+username = username.toLowerCase();
+password = password.toLowerCase();
+
+// Calculate and Print
+
+if (username != "joe"  && username != "ann") {
+   print("Invalid username.");
+}
+else if (username == "joe" && password == "turtle" ||
+username == "ann" && password == "bunny") {
+   print("Valid username and password.");
+}
+else {
+   print("Valid username but invalid password.");
+}

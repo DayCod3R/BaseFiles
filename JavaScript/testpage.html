@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my web page</title>
+
+<script type="text/javascript">
+
+
+
+</script>
+
+<style type="text/css">
+
+body {
+   background-color: yellow;
+}
+
+th {
+   height: 30px;
+   width: 100px;
+   border: 2px solid black;
+}
+
+#leftdiv {
+   width: 300px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+#rightdiv {
+   width: 300px;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+}
+
+#centerdiv {
+   position: absolute;
+   top: 0px;
+   left: 300px;
+   right: 300px;
+   background-color: green;
+}
+
+#changerdiv {
+   position: absolute;
+   top: 20px;
+   left: 30px;
+   width: 200px;
+}
+
+#opener, #opener2 {
+   width: 200px;
+   background-color: white;
+   display: block;
+}
+
+#closer, #closer2 {
+   width: 200px;
+   background-color: white;
+   display: none;
+}
+
+#colorlist, #colorlist2 {
+   width: 200px;
+   background-color: white;
+   display: none;
+}
+</style>
+
+<body>
+<div id="leftdiv">
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+<img id="picture" src="butterfly.gif" /><br />
+<table>
+   <tr>
+      <th onmouseover="document.getElementById('picture').src='images/tulips.gif';">tulips</th>
+   </tr>
+    <tr>
+      <th onmouseover="document.getElementById('picture').src='images/butterfly.gif';">butterfly</th>
+   </tr>
+</table>
+
+</div>
+
+<div id="centerdiv">
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs.
+
+</div>
+
+<div id="rightdiv">
+
+<div id="changerdiv">
+<h3 id="opener" onclick="document.getElementById('opener').style.display='none';
+                         document.getElementById('closer').style.display='block'; 
+                         document.getElementById('colorlist').style.display='block';"
+>Open</h3>
+<h3 id="closer" onclick="document.getElementById('closer').style.display='none';
+                         document.getElementById('opener').style.display='block'; 
+                         document.getElementById('colorlist').style.display='none';">
+Close</h3>
+
+<ul id="colorlist">
+   <li>red</li>
+   <li>red</li>
+   <li>red</li>
+</ul>
+
+<h3 id="opener2" onclick="document.getElementById('opener2').style.display='none';
+                         document.getElementById('closer2').style.display='block'; 
+                         document.getElementById('colorlist2').style.display='block';"
+>Open</h3>
+<h3 id="closer2" onclick="document.getElementById('closer2').style.display='none';
+                         document.getElementById('opener2').style.display='block'; 
+                         document.getElementById('colorlist2').style.display='none';">
+Close</h3>
+<ul id="colorlist2">
+   <li>blue</li>
+   <li>blue</li>
+   <li>blue</li>
+</ul>
+
+</div>
+
+</div>
+
+</body>
+</html>

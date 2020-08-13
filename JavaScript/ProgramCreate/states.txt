@@ -1,0 +1,116 @@
+        var states = new Array();
+
+        states[0] = "Alabama";
+        states[1] = "Alaska";
+        states[2] = "Arizona";
+        states[3] = "Arkansas";
+        states[4] = "California";
+        states[5] = "Colorado";
+        states[6] = "Connecticut";
+        states[7] = "Delaware";
+        states[8] = "Florida";
+        states[9] = "Georgia";
+        states[10] = "Hawaii";
+        states[11] = "Idaho";
+        states[12] = "Illinois";
+        states[13] = "Indiana";
+        states[14] = "Iowa";
+        states[15] = "Kansas";
+        states[16] = "Kentucky";
+        states[17] = "Louisiana";
+        states[18] = "Maine";
+        states[19] = "Maryland";
+        states[20] = "Massachusetts";
+        states[21] = "Michigan";
+        states[22] = "Minnesota";
+        states[23] = "Mississippi";
+        states[24] = "Missouri";
+        states[25] = "Montana";
+        states[26] = "Nebraska";
+        states[27] = "Nevada";
+        states[28] = "New Hampshire";
+        states[29] = "New Jersey";
+        states[30] = "New Mexico";
+        states[31] = "New York";
+        states[32] = "North Carolina";
+        states[33] = "North Dakota";
+        states[34] = "Ohio";
+        states[35] = "Oklahoma";
+        states[36] = "Oregon";
+        states[37] = "Pennsylvania";
+        states[38] = "Rhode Island";
+        states[39] = "South Carolina";
+        states[40] = "South Dakota";
+        states[41] = "Tennessee";
+        states[42] = "Texas";
+        states[43] = "Utah";
+        states[44] = "Vermont";
+        states[45] = "Virginia";
+        states[46] = "Washington";
+        states[47] = "West Virginia";
+        states[48] = "Wisconsin";
+        states[49] = "Wyoming";
+
+var i;
+
+// printing the states using a while loop
+
+i = 0;
+
+while(i < states.length) {
+   print(states[i]);
+   i = i + 1;
+}
+
+// printing the states using a for loop
+
+for(i = 0; i < states.length;  i = i + 1) {
+ print(states[i]);
+}
+
+// Using an if to determine a letter grade
+
+var lettergrade;
+lettergrade = input[0];
+
+if (lettergrade =="A") {
+   print("Pass");
+}
+else if (lettergrade == "B") {
+   print("Pass");
+}
+else if (lettergrade =="C") {
+   print("Pass");
+}
+else if (lettergrade =="D") {
+   print("Unsatisfactory");
+}
+else {
+    print("F");
+}
+
+// Using switch to determine a letter grade
+
+switch(lettergrade) {
+
+   case "A":
+   print("Pass");
+   break;
+
+   case "B":
+   print("Pass");
+   break;
+
+   case "C":
+   print("Pass");
+   break;
+
+   case "D":
+   print("Unsatisfactory");
+   break;
+
+   default:
+   print("Fail");
+   break;
+}
+

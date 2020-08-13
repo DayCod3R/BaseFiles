@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation</title>
+
+<script type="text/javascript">
+
+//global variables
+   var x_speed = 15;
+   var y_speed = 10;
+   var butterfly_width = 200;
+
+   function adjustwidth() {
+      var pic = document.getElementById('butterfly');
+      butterfly_width = butterfly_width + 5;
+      pic.style.width = butterfly_width + "px";
+      
+   }
+
+   function movepicture(downamount, torightamount) {    
+      var down = parseFloat(downamount);
+      var toright = parseFloat(torightamount);
+      var pic = document.getElementById('butterfly');
+      pic.style.top = pic.offsetTop + down + "px";
+      pic.style.left = pic.offsetLeft + toright + "px";
+   }
+
+   function automovepicture() { 
+      var leftlimit = 20;
+      var rightlimit = 600;
+      var toplimit = 20;
+      var bottomlimit = 400; 
+      var pic = document.getElementById('butterfly');
+
+      if (pic.offsetLeft > rightlimit) {
+         x_speed = x_speed * -1;
+      }
+      if (pic.offsetLeft < leftlimit) {
+         x_speed = x_speed * -1;
+      }
+      if (pic.offsetTop > bottomlimit) {
+         y_speed = y_speed * -1;
+      }
+      if (pic.offsetTop < toplimit) {
+         y_speed = y_speed * -1;
+      }
+      pic.style.left = pic.offsetLeft + x_speed + "px";
+      pic.style.top = pic.offsetTop + y_speed + "px";
+   }
+
+</script>
+
+<style type="text/css">
+   #butterfly {
+       position: absolute;
+       top: 400px;
+       left: 300px;
+    }
+    
+   #room {
+       position: absolute;
+       top: 150px;
+       left: 150px;
+       height: 580px;
+       width: 780px;
+       border: 10px solid red;
+    }
+  
+</style>
+
+</head>
+
+<body>
+<img src="images/butterfly.gif" id="butterfly" />
+<div id="room">
+</div>
+
+
+<form action="">
+
+  <label>
+     Move down <input id="movedown" type="text" size="10" maxlength="10" />
+  </label>
+  <br />
+
+  <label>
+     Move to right <input id="movetoright" type="text" size="10" maxlength="10" />
+  </label>
+  <br />
+  
+  <input type="button" value="Move"
+   onclick="movepicture(document.getElementById('movedown').value, 
+            document.getElementById('movetoright').value);" /> <br />
+
+  <input type="button" value="Start Animation"
+   onclick="mytimer = setInterval('automovepicture()',100);
+            mytimer2 = setInterval('adjustwidth()', 100);" /> <br />
+
+  <input type="button" value="Stop Animation"
+   onclick="clearInterval(mytimer);
+            clearInterval(mytimer2);" /> <br />
+
+</form>
+
+</body>
+</html>

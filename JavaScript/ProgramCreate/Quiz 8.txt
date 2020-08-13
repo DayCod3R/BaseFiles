@@ -1,0 +1,15 @@
+// FUNCTION LIBRARY
+
+function wholename(firstname, middlename, lastname) {
+   var fullname;
+   fullname = firstname + " " + middlename + " " + lastname;
+   return fullname;  
+}
+
+
+
+
+
+
+
+// MY PROGRAM
